@@ -3,15 +3,171 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Post Four | My Blog</title>
+<title>Natural Language Processing: Helping Computers Understand Human Language | My Blog</title>
 <link rel="stylesheet" href="../style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+  .article-hero {
+    position: relative;
+    height: 55vh;
+    min-height: 380px;
+    background: linear-gradient(rgba(10,10,11,0.35), rgba(10,10,11,0.85)),
+                url('https://images.unsplash.com/photo-1536571195711-1b796f9f9f7f?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 3rem 2rem;
+  }
+
+  .article-hero-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .back-link {
+    color: #cfcfcf;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    transition: color 0.2s ease;
+  }
+  .back-link:hover { color: #fff; }
+
+  .article-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #e0e0e0;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+  }
+
+  .article-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    line-height: 1.2;
+    color: #fff;
+    max-width: 700px;
+  }
+
+  .article-body {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 3.5rem 2rem 5rem;
+  }
+
+  .article-body h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-top: 2.8rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    border-left: 3px solid #f2f2f2;
+    padding-left: 0.9rem;
+  }
+
+  .article-body h2:first-of-type {
+    margin-top: 0;
+  }
+
+  .article-body p {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: #d4d4d4;
+    margin-bottom: 1.3rem;
+  }
+
+  .disclaimer-box {
+    background: #1a1a1c;
+    border: 1px solid #2a2a2c;
+    border-left: 3px solid #888;
+    border-radius: 6px;
+    padding: 1.2rem 1.5rem;
+    font-size: 0.95rem;
+    color: #b5b5b5;
+    font-style: italic;
+  }
+
+  .references-box {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+  }
+
+  .references-box p {
+    font-size: 0.92rem;
+    color: #a8a8a8;
+    line-height: 1.7;
+    word-break: break-word;
+  }
+
+  .references-box a {
+    color: #cfcfcf;
+  }
+
+  hr.divider {
+    border: none;
+    border-top: 1px solid #2a2a2c;
+    margin: 3rem 0;
+  }
+</style>
 </head>
 <body>
 
-<main style="max-width:700px; margin:4rem auto; padding:0 2rem;">
-  <a href="../index.html" style="color:#aaa; text-decoration:none;">&larr; Back to Blog</a>
-  <h1 style="font-family:'Playfair Display', serif; margin-top:1.5rem;">Post Four</h1>
-  <p style="color:#aaa; margin-top:1rem;">Content coming soon.</p>
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <a class="back-link" href="../index.html">&larr; Back to Blog</a>
+    <span class="article-tag">AI Foundational Concepts</span>
+    <h1>Natural Language Processing: Helping Computers Understand Human Language</h1>
+  </div>
+</div>
+
+<main class="article-body">
+
+  <h2>Brief Description</h2>
+  <p>This blog explains natural language processing in simple terms, drawing on definitions from computer science and technology sources. It describes how computers are able to understand and work with human language and gives a detailed example of how this is used in real life through virtual assistants.</p>
+
+  <h2>Disclaimer</h2>
+  <div class="disclaimer-box">
+    <p style="margin-bottom:0;">This blog is written for learning purposes only. It gives a simple and general view of the topic based on selected academic and industry sources and it should not be used as the only source for making important technical or business decisions.</p>
+  </div>
+
+  <h2>Introduction</h2>
+  <p>Human language can be difficult for computers to understand because it includes different meanings, tones, ways of speaking and cultural context that people pick up naturally but that a machine has no built in sense of. Natural language processing is the part of artificial intelligence that helps computers make sense of human language whether it is written or spoken, by combining computational linguistics with statistical and machine learning techniques so that computers can process language in a way that resembles human understanding (IBM Cloud Education, 2020, cited in moodle.cornellcollege.edu, n.d.).</p>
+  <p>This blog explains what natural language processing is in a simple way, using a widely used industry definition and shows how it is used in everyday life through one of its most common applications.</p>
+
+  <h2>Definition of Concepts</h2>
+  <p>Natural language processing, often called NLP is the branch of artificial intelligence concerned with giving computers the ability to understand text and spoken words in much the same way human beings can rather than only recognising isolated words or fixed commands (IBM Cloud Education, 2020, cited in moodle.cornellcollege.edu, n.d.). It involves breaking language down into smaller parts, such as words and sentences, through processes like tokenisation so that the computer can analyse their structure and figure out their meaning step by step.</p>
+  <p>NLP is used to help computers understand things like grammar, tone, and context, including who the speaker or writer is and what they intend to communicate. This allows computers to carry out tasks such as translating between languages, understanding and answering questions, or figuring out whether a piece of text expresses a positive or negative sentiment all of which rely on the same underlying ability to interpret human language rather than treat it as a simple string of characters.</p>
+
+  <h2>Use Case Example</h2>
+  <p>A common example of natural language processing is virtual assistants, such as those found on smartphones and smart speakers. When a person asks a question out loud, the assistant uses NLP techniques, including speech recognition and language understanding, to convert the spoken words into text and figure out what the person actually wants even when the request is phrased in different ways.</p>
+  <p>Once it understands the request, the assistant can search for information or carry out a task, such as setting a reminder, playing music, or answering a general knowledge question, all without the person needing to use special, rigid commands. This shows how natural language processing allows people to communicate with computers in a fairly natural way.</p>
+  <p>However, this technology is not equally accurate for everyone. Research commissioned by the Washington Post and reported by VentureBeat (2018) found that Amazon's Alexa and the Google Assistant were around 30 percent less likely to understand non American accents than accents from native born American users, with accuracy for Chinese, Indian and Spanish accented speech sitting at around 80 percent. This example shows both the strength of NLP in enabling natural communication and one of its current real world limitations, since the technology tends to work best for the accents and speech patterns that are best represented in its training data.</p>
+
+  <h2>Future Direction or Trends</h2>
+  <p>In the future, natural language processing is expected to become better at understanding context, tone and even emotions in language, which may lead to more natural and genuinely helpful conversations between people and computers, rather than interactions that feel rigid or scripted.</p>
+  <p>There is also growing interest in making sure NLP systems understand different languages and accents fairly so that they work well for people from many different linguistic backgrounds rather than performing best only for a narrow group of speakers. The accent accuracy gap identified in voice assistants shows why this fairness focus matters in practice, since systems trained mostly on one type of accent risk excluding or underserving speakers who do not match that pattern (VentureBeat, 2018).</p>
+
+  <h2>Conclusion</h2>
+  <p>Natural language processing helps computers understand and respond to human language in a way that feels relatively natural, though current systems still perform unevenly across different accents and speech patterns. Understanding this concept along with its everyday uses and its present limitations, helps explain how many modern tools are able to communicate with people, and where there is still room for these systems to improve.</p>
+
+  <hr class="divider">
+
+  <h2>References</h2>
+  <div class="references-box">
+    <p>IBM Cloud Education (2020) <em>What is natural language processing?</em>, cited in moodle.cornellcollege.edu (n.d.) <em>What is natural language processing?</em> Available at: <a href="https://moodle.cornellcollege.edu/mod/resource/view.php?id=225377" target="_blank" rel="noopener">https://moodle.cornellcollege.edu/mod/resource/view.php?id=225377</a> (Accessed: 26 September 2026).</p>
+    <p>VentureBeat (2018) <em>Alexa and Google Assistant are 30% less likely to understand non-American accents</em>. Available at: <a href="https://venturebeat.com/ai/alexa-and-google-assistant-are-30-less-likely-to-understand-non-american-accents" target="_blank" rel="noopener">https://venturebeat.com/ai/alexa-and-google-assistant-are-30-less-likely-to-understand-non-american-accents</a> (Accessed: 26 September 2026).</p>
+  </div>
+
+  <a class="back-link" href="../index.html" style="margin-top:3rem; display:inline-block;">&larr; Back to Blog</a>
+
 </main>
 
 </body>
