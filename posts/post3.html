@@ -3,15 +3,172 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Post Three | My Blog</title>
+<title>Machine Learning: Teaching Computers to Learn from Data | My Blog</title>
 <link rel="stylesheet" href="../style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+  .article-hero {
+    position: relative;
+    height: 55vh;
+    min-height: 380px;
+    background: linear-gradient(rgba(10,10,11,0.35), rgba(10,10,11,0.85)),
+                url('https://images.unsplash.com/photo-1644088379091-d574269d422f?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 3rem 2rem;
+  }
+
+  .article-hero-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .back-link {
+    color: #cfcfcf;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    transition: color 0.2s ease;
+  }
+  .back-link:hover { color: #fff; }
+
+  .article-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #e0e0e0;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+  }
+
+  .article-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    line-height: 1.2;
+    color: #fff;
+    max-width: 700px;
+  }
+
+  .article-body {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 3.5rem 2rem 5rem;
+  }
+
+  .article-body h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-top: 2.8rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    border-left: 3px solid #f2f2f2;
+    padding-left: 0.9rem;
+  }
+
+  .article-body h2:first-of-type {
+    margin-top: 0;
+  }
+
+  .article-body p {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: #d4d4d4;
+    margin-bottom: 1.3rem;
+  }
+
+  .disclaimer-box {
+    background: #1a1a1c;
+    border: 1px solid #2a2a2c;
+    border-left: 3px solid #888;
+    border-radius: 6px;
+    padding: 1.2rem 1.5rem;
+    font-size: 0.95rem;
+    color: #b5b5b5;
+    font-style: italic;
+  }
+
+  .references-box {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+  }
+
+  .references-box p {
+    font-size: 0.92rem;
+    color: #a8a8a8;
+    line-height: 1.7;
+    word-break: break-word;
+  }
+
+  .references-box a {
+    color: #cfcfcf;
+  }
+
+  hr.divider {
+    border: none;
+    border-top: 1px solid #2a2a2c;
+    margin: 3rem 0;
+  }
+</style>
 </head>
 <body>
 
-<main style="max-width:700px; margin:4rem auto; padding:0 2rem;">
-  <a href="../index.html" style="color:#aaa; text-decoration:none;">&larr; Back to Blog</a>
-  <h1 style="font-family:'Playfair Display', serif; margin-top:1.5rem;">Post Three</h1>
-  <p style="color:#aaa; margin-top:1rem;">Content coming soon.</p>
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <a class="back-link" href="../index.html">&larr; Back to Blog</a>
+    <span class="article-tag">AI Foundational Concepts</span>
+    <h1>Machine Learning: Teaching Computers to Learn from Data</h1>
+  </div>
+</div>
+
+<main class="article-body">
+
+  <h2>Brief Description</h2>
+  <p>This blog explains machine learning in simple terms, drawing on definitions and research from computer science sources. It describes how computers can learn from data instead of being told exactly what to do, and gives a detailed example of how this is used in real life through email spam filtering.</p>
+
+  <h2>Disclaimer</h2>
+  <div class="disclaimer-box">
+    <p style="margin-bottom:0;">This blog is written for learning purposes only. It gives a simple and general view of the topic based on selected academic and industry sources, and it should not be used as the only source for making important technical or business decisions.</p>
+  </div>
+
+  <h2>Introduction</h2>
+  <p>Machine learning is one of the most important parts of artificial intelligence and it is the technology behind many of the smart features people use every day without necessarily realising it. Instead of giving a computer strict, step by step instructions for every possible situation, machine learning allows a computer to look at examples of data and figure out patterns on its own, rather than relying purely on fixed, pre written rules (IBM, n.d., cited in ecqi.healthit.gov, n.d.).</p>
+  <p>This blog explains what machine learning is in a simple way, using a widely used definition from the field, and shows how it is used in everyday life through a common real world example that most people encounter regularly.</p>
+
+  <h2>Definition of Concepts</h2>
+  <p>Machine learning is a way of teaching computers to learn from examples instead of following fixed rules written entirely by a person. IBM describes it as a branch of artificial intelligence that focuses on using data and algorithms to imitate the way humans learn, gradually improving the accuracy of the computer's decision making over time (IBM, n.d., cited in ecqi.healthit.gov, n.d.). In practice, the computer is given a large amount of data and it looks for patterns within that data during a process often called training once it finds these patterns, it can use them to make predictions or decisions on new information it has not seen before.</p>
+  <p>The more relevant data the computer has during training, the better it usually becomes at finding accurate and useful patterns. This is quite different from traditional programming, where a person must write out every single rule the computer needs to follow in advance, which becomes impractical for tasks that are too complex or too varied to describe with a fixed set of rules.</p>
+
+  <h2>Use Case Example</h2>
+  <p>A common and very familiar example of machine learning is the email spam filter. The system is trained using many examples of emails that have already been marked as spam and emails that have been marked as normal and a machine learning algorithm, such as a Naive Bayes classifier, calculates the probability that a new email is spam based on the words and patterns it contains (Biswas, 2017). Over time the system learns the patterns that usually appear in spam messages such as certain words, unusual formatting or suspicious links.</p>
+  <p>Once trained, the spam filter can look at new, previously unseen emails and decide whether they are likely to be spam or not, without a person having to check every single message by hand (Biswas, 2017). This shows how machine learning can save time and effort by handling repetitive classification tasks that would take humans far longer to do manually while still adapting as new types of spam messages appear over time.</p>
+  <p>It is worth noting that spam filters and similar classification systems are not immune to the wider concerns raised about fairness in machine learning since biases in the training data can still affect how such systems behave in practice (Barr et al., 2024).</p>
+
+  <h2>Future Direction or Trends</h2>
+  <p>In the future, machine learning is expected to become even more accurate as more data becomes available and computing power continues to improve, which may lead to smarter systems that can handle more complex, less repetitive tasks than simple classification. As these systems are increasingly used in high stakes decision making from credit scoring to healthcare there is likely to be continued growth in how widely machine learning is applied across different industries.</p>
+  <p>There is also a growing and important focus on making machine learning fairer and safer so that the patterns it learns do not lead to unfair or harmful outcomes for people. Barr et al. (2024) note that biases can enter machine learning models in complex ways depending on the context in which they are used, which is why researchers have called for context aware approaches to selecting fairness measures rather than relying on a single, one-size fits all metric.</p>
+
+  <h2>Conclusion</h2>
+  <p>Machine learning allows computers to learn from data and improve over time instead of following fixed instructions written entirely in advance. Understanding this concept, along with its real world applications and its ongoing fairness challenges, helps explain how many modern technologies are able to make smart, adaptive decisions.</p>
+
+  <hr class="divider">
+
+  <h2>References</h2>
+  <div class="references-box">
+    <p>Barr, C.J.S., Erdelyi, O., Docherty, P.D. and Grace, R.C. (2024) <em>A review of fairness and a practical guide to selecting context-appropriate fairness metrics in machine learning</em>. Available at: <a href="https://arxiv.org/pdf/2411.06624" target="_blank" rel="noopener">https://arxiv.org/pdf/2411.06624</a> (Accessed: 26 September 2026).</p>
+    <p>Biswas, S. (2017) <em>Building a spam filter using machine learning</em>. Available at: <a href="https://www.booleanworld.com/building-spam-filter-using-machine-learning/" target="_blank" rel="noopener">https://www.booleanworld.com/building-spam-filter-using-machine-learning/</a> (Accessed: 26 September 2026).</p>
+    <p>IBM (n.d.) <em>What is machine learning?</em>, cited in ecqi.healthit.gov (n.d.) <em>Machine learning</em>. Available at: <a href="https://ecqi.healthit.gov/glossary/machine-learning" target="_blank" rel="noopener">https://ecqi.healthit.gov/glossary/machine-learning</a> (Accessed: 26 September 2026).</p>
+  </div>
+
+  <a class="back-link" href="../index.html" style="margin-top:3rem; display:inline-block;">&larr; Back to Blog</a>
+
 </main>
 
 </body>
