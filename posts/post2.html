@@ -3,15 +3,173 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Post Two | My Blog</title>
+<title>The Seven Stages of Artificial Intelligence Maturity | My Blog</title>
 <link rel="stylesheet" href="../style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+  .article-hero {
+    position: relative;
+    height: 55vh;
+    min-height: 380px;
+    background: linear-gradient(rgba(10,10,11,0.35), rgba(10,10,11,0.85)),
+                url('https://images.unsplash.com/photo-1507097489474-c9212a8f8597?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 3rem 2rem;
+  }
+
+  .article-hero-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .back-link {
+    color: #cfcfcf;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    transition: color 0.2s ease;
+  }
+  .back-link:hover { color: #fff; }
+
+  .article-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #e0e0e0;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+  }
+
+  .article-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    line-height: 1.2;
+    color: #fff;
+    max-width: 700px;
+  }
+
+  .article-body {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 3.5rem 2rem 5rem;
+  }
+
+  .article-body h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-top: 2.8rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    border-left: 3px solid #f2f2f2;
+    padding-left: 0.9rem;
+  }
+
+  .article-body h2:first-of-type {
+    margin-top: 0;
+  }
+
+  .article-body p {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: #d4d4d4;
+    margin-bottom: 1.3rem;
+  }
+
+  .disclaimer-box {
+    background: #1a1a1c;
+    border: 1px solid #2a2a2c;
+    border-left: 3px solid #888;
+    border-radius: 6px;
+    padding: 1.2rem 1.5rem;
+    font-size: 0.95rem;
+    color: #b5b5b5;
+    font-style: italic;
+  }
+
+  .references-box {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+  }
+
+  .references-box p {
+    font-size: 0.92rem;
+    color: #a8a8a8;
+    line-height: 1.7;
+    word-break: break-word;
+  }
+
+  .references-box a {
+    color: #cfcfcf;
+  }
+
+  hr.divider {
+    border: none;
+    border-top: 1px solid #2a2a2c;
+    margin: 3rem 0;
+  }
+</style>
 </head>
 <body>
 
-<main style="max-width:700px; margin:4rem auto; padding:0 2rem;">
-  <a href="../index.html" style="color:#aaa; text-decoration:none;">&larr; Back to Blog</a>
-  <h1 style="font-family:'Playfair Display', serif; margin-top:1.5rem;">Post Two</h1>
-  <p style="color:#aaa; margin-top:1rem;">Content coming soon.</p>
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <a class="back-link" href="../index.html">&larr; Back to Blog</a>
+    <span class="article-tag">AI Foundational Concepts</span>
+    <h1>The Seven Stages of Artificial Intelligence Maturity</h1>
+  </div>
+</div>
+
+<main class="article-body">
+
+  <h2>Brief Description</h2>
+  <p>This blog explains the seven stages of artificial intelligence maturity, drawing on recent industry frameworks that describe how organisations and systems move through these stages. It describes how AI grows from simple rule based systems to more advanced and independent systems and gives a detailed example of how this growth is seen in real life, particularly in customer service technology.</p>
+
+  <h2>Disclaimer</h2>
+  <div class="disclaimer-box">
+    <p style="margin-bottom:0;">This blog is written for learning purposes only. It gives a simple and general view of the topic based on selected industry sources, and it should not be used as the only source for making important business or technical decisions.</p>
+  </div>
+
+  <h2>Introduction</h2>
+  <p>Artificial intelligence does not stay the same once it is built. It grows and improves over time, moving through different stages of ability as the underlying technology and data around it mature. Each stage shows how much an AI system can do on its own, how well it can handle tasks without constant human help and how much trust can reasonably be placed in its outputs. Several recent industry frameworks describe this growth using a seven stage structure, showing that this way of thinking about AI maturity has become a fairly common approach (Hillier, cited in Canadian Autodealer, 2026; execsearches.com, 2026).</p>
+  <p>This blog explains the general idea behind the seven stages of AI maturity in a simple way, so it is easier to understand how AI develops from basic rule following tools to advanced systems that can operate with far less human oversight.</p>
+
+  <h2>Definition of Concepts</h2>
+  <p>The seven stages of AI maturity describe a path that AI systems and the organisations using them tend to follow as they become smarter, more trusted and more capable. The early stages usually involve simple, rule based tools with little or no learning ability, where people are only just becoming aware of what AI can do and are experimenting with it in small, isolated ways (execsearches.com, 2026). As the stages progress, systems begin to move from simply assisting people with suggestions toward completing clearly defined, multi step tasks and organisations begin to put proper guardrails, oversight and accountability in place around how the AI is used (execsearches.com, 2026).</p>
+  <p>The later stages involve AI that can reason, plan, and make decisions with very little human input, often described as reaching a level of governed or adaptive autonomy, where the system is trusted with more responsibility because proper controls, audit trails and escalation rules already exist around it (execsearches.com, 2026). At the highest stages, AI would be able to handle complex tasks and adapt to new situations in a way that looks close to human level judgement, although current frameworks note that most organisations are still only in the middle stages of this journey and have not yet fully reached the top (Hillier, cited in Canadian Autodealer, 2026).</p>
+
+  <h2>Use Case Example</h2>
+  <p>A good example of this growth can be seen in customer service technology particularly chatbots. Early chatbots were rule based systems that followed decision trees and matched specific keywords, meaning they worked well for narrow tasks like password resets or simple order lookups but failed as soon as a customer asked something unexpected (Inkeep, n.d.). This represents one of the earliest and most limited stages of AI maturity, where the system cannot learn or adapt on its own.</p>
+  <p>Over time, these systems improved by adopting machine learning and natural language processing, which allowed them to learn from previous conversations and understand user intentions rather than only matching fixed keywords (Aunoa, n.d.). This growth reflects a move into the middle stages of AI maturity, where systems begin to learn from data and improve their own performance rather than relying purely on hard coded rules.</p>
+  <p>Today, some advanced systems, often described as AI Agents rather than simple chatbots, can understand context, retrieve information from a real knowledge base, remember previous conversations and generate accurate, natural responses to questions they have never seen before (Inkeep, n.d.). This shows how far AI has moved along the maturity stages even though it has not yet reached full independent reasoning and judgement in every situation which is what the highest stage of maturity would represent.</p>
+
+  <h2>Future Direction or Trends</h2>
+  <p>In the future, AI is expected to continue moving toward the higher stages of maturity described in these frameworks. This means AI systems may become better at reasoning, planning and working with very little human guidance, with the shift from AI offering suggestions to AI completing full, multi step work described as one of the major turning points in the maturity journey (execsearches.com, 2026).</p>
+  <p>There is also growing interest in making sure this growth happens safely and responsibly. Industry frameworks stress that guardrails, audit trails, evaluation processes,and clear human ownership should be established before an AI system is trusted with more autonomy rather than expanding its independence first and adding safety controls afterwards (execsearches.com, 2026). As organisations focus on moving individual workflows up one stage at a time rather than attempting a complete transformation all at once AI is expected to become more capable and trustworthy while still remaining accountable to human oversight for the foreseeable future.</p>
+
+  <h2>Conclusion</h2>
+  <p>The seven stages of AI maturity show how artificial intelligence grows from simple, rule based tools to more advanced, adaptive, and independent systems. Understanding these stages, supported by current industry frameworks, helps people see how far AI has come, where most real world systems currently sit on that journey, and what still needs to happen before AI can be trusted with greater independence.</p>
+
+  <hr class="divider">
+
+  <h2>References</h2>
+  <div class="references-box">
+    <p>Canadian Autodealer (2026) <em>The seven stages of AI adoption</em>. Available at: <a href="https://canadianautodealer.ca/2026/07/the-seven-stages-of-ai-adoption/" target="_blank" rel="noopener">https://canadianautodealer.ca/2026/07/the-seven-stages-of-ai-adoption/</a> (Accessed: 26 September 2026).</p>
+    <p>execsearches.com (2026) <em>The Agentic Era AI maturity model: 7 stages of governed AI autonomy</em>. Available at: <a href="https://blog.execsearches.com/the-agentic-era-ai-maturity-model-seven-stages-of-governed-autonomy/" target="_blank" rel="noopener">https://blog.execsearches.com/the-agentic-era-ai-maturity-model-seven-stages-of-governed-autonomy/</a> (Accessed: 26 September 2026).</p>
+    <p>Aunoa (n.d.) <em>The evolution of chatbots</em>. Available at: <a href="https://aunoa.ai/en/blog/the-evolution-of-chatbots/" target="_blank" rel="noopener">https://aunoa.ai/en/blog/the-evolution-of-chatbots/</a> (Accessed: 26 September 2026).</p>
+    <p>Inkeep (n.d.) <em>AI customer support chatbots: from scripted bots to intelligent agents</em>. Available at: <a href="https://inkeep.com/learn/ai-customer-support-chatbot" target="_blank" rel="noopener">https://inkeep.com/learn/ai-customer-support-chatbot</a> (Accessed: 26 September 2026).</p>
+  </div>
+
+  <a class="back-link" href="../index.html" style="margin-top:3rem; display:inline-block;">&larr; Back to Blog</a>
+
 </main>
 
 </body>
