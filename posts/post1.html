@@ -3,15 +3,173 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Post One | My Blog</title>
+<title>The Fundamental Limitations of Current Artificial Intelligence | My Blog</title>
 <link rel="stylesheet" href="../style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+  .article-hero {
+    position: relative;
+    height: 55vh;
+    min-height: 380px;
+    background: linear-gradient(rgba(10,10,11,0.35), rgba(10,10,11,0.85)),
+                url('https://images.unsplash.com/photo-1535378620166-273708d44e4c?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 3rem 2rem;
+  }
+
+  .article-hero-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .back-link {
+    color: #cfcfcf;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    transition: color 0.2s ease;
+  }
+  .back-link:hover { color: #fff; }
+
+  .article-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #e0e0e0;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+  }
+
+  .article-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    line-height: 1.2;
+    color: #fff;
+    max-width: 700px;
+  }
+
+  .article-body {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 3.5rem 2rem 5rem;
+  }
+
+  .article-body h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-top: 2.8rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    border-left: 3px solid #f2f2f2;
+    padding-left: 0.9rem;
+  }
+
+  .article-body h2:first-of-type {
+    margin-top: 0;
+  }
+
+  .article-body p {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: #d4d4d4;
+    margin-bottom: 1.3rem;
+  }
+
+  .disclaimer-box {
+    background: #1a1a1c;
+    border: 1px solid #2a2a2c;
+    border-left: 3px solid #888;
+    border-radius: 6px;
+    padding: 1.2rem 1.5rem;
+    font-size: 0.95rem;
+    color: #b5b5b5;
+    font-style: italic;
+  }
+
+  .references-box {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+  }
+
+  .references-box p {
+    font-size: 0.92rem;
+    color: #a8a8a8;
+    line-height: 1.7;
+    word-break: break-word;
+  }
+
+  .references-box a {
+    color: #cfcfcf;
+  }
+
+  hr.divider {
+    border: none;
+    border-top: 1px solid #2a2a2c;
+    margin: 3rem 0;
+  }
+</style>
 </head>
 <body>
 
-<main style="max-width:700px; margin:4rem auto; padding:0 2rem;">
-  <a href="../index.html" style="color:#aaa; text-decoration:none;">&larr; Back to Blog</a>
-  <h1 style="font-family:'Playfair Display', serif; margin-top:1.5rem;">Post One</h1>
-  <p style="color:#aaa; margin-top:1rem;">Content coming soon.</p>
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <a class="back-link" href="../index.html">&larr; Back to Blog</a>
+    <span class="article-tag">AI Foundational Concepts</span>
+    <h1>The Fundamental Limitations of Current Artificial Intelligence</h1>
+  </div>
+</div>
+
+<main class="article-body">
+
+  <h2>Brief Description</h2>
+  <p>This blog looks at the fundamental limitations of artificial intelligence today. It explains what these limits mean in simple terms, using recent academic and industry sources to support each point, gives a detailed example of where the limits show up in real life and looks at what may change in the future as researchers work to address these problems.</p>
+
+  <h2>Disclaimer</h2>
+  <div class="disclaimer-box">
+    <p style="margin-bottom:0;">This blog is written for learning purposes only. It gives a simple and general view of the topic based on selected academic and industry sources and it should not be used as the only source for making important decisions, especially in areas such as safety, healthcare or law.</p>
+  </div>
+
+  <h2>Introduction</h2>
+  <p>Artificial intelligence has become part of daily life. It helps people search the internet, talk to virtual assistants, recommend products and even drive cars. Because AI is now used in so many places, it is easy to assume it can do almost anything a human can do and sometimes even more. But even though AI can do many helpful things, it is not perfect and it is still not able to think, reason or understand the world the way a human does.</p>
+  <p>This blog explains some of the main limits of AI today in simple language, using examples from real research and industry writing. Understanding these limits helps people use AI in a smart and safe way rather than trusting it blindly in every situation.</p>
+
+  <h2>Definition of Concepts</h2>
+  <p>AI systems learn from data rather than being given a full set of instructions to follow. This means they need large amounts of information to work well and if that data is wrong or biased the AI can make mistakes or give unfair results. As Marwala (2018) explains, AI does not remove the problem of imperfect and incomplete input data and the models built from that data are never fully perfect either. AI also does not truly understand what it is doing in the way a person does it just follows patterns it has learned from examples but it does not have real understanding.</p>
+  <p>Another major limit is that AI struggles with situations it has not been trained for. If something happens that is very different from the data it learned from, the AI may not know how to respond safely or correctly. AI systems also often cannot explain their decisions in a way people can easily understand. This is sometimes called the "black box" problem, where the AI gives an answer but does not show clearly how it reached that answer, which makes it hard to fully trust in important situations. (Guidotti, Monreale and Pedreschi, 2019).</p>
+
+  <h2>Use Case Example</h2>
+  <p>One clear example of these limits is in self driving cars. These cars use AI to recognise what's in front of them and they generally perform well in normal, everyday conditions such as clear weather and well marked roads on familiar routes. However, they can struggle badly when faced with situations that are different from what they were trained on.</p>
+  <p>Brooks (2017) describes many real world examples of these difficult situations, known as edge cases, such as a car being unsure how to respond to hand signals from a traffic officer, unusual road layouts or unexpected behaviour from pedestrians and other drivers. Because the AI does not truly understand the world the way a human driver does and cannot always reason about the intentions of the people around it, it may not always make the safest choice when something unusual happens on the road.</p>
+  <p>More recent industry reporting shows that this remains a real challenge even with newer systems. Unite.AI (2026) reports that situations such as unprotected turns in heavy rain, construction zones with unclear lane markings and emergency workers using improvised hand signals can still challenge advanced self driving systems because these systems are good at detecting objects but still struggle to reason about future events and understand the intentions of other road users. This shows why human supervision is still needed in many autonomous systems and why full trust cannot yet be placed only on the AI.</p>
+
+  <h2>Future Direction or Trends</h2>
+  <p>In the future, researchers are working hard on making AI systems better at handling new and unexpected situations rather than only situations they have seen many times before. Part of this work includes building AI that can explain its decisions more clearly, an area often called explainable AI, so that people can understand and trust the reasons behind an AI decision rather than only seeing the final result (Guidotti, Monreale and Pedreschi, 2019).</p>
+  <p>There is also growing interest in combining AI's ability to detect patterns with better reasoning abilities, so that systems can respond more sensibly to situations outside their training data. Unite.AI (2026) points to newer approaches that add an explicit reasoning layer on top of basic pattern detection, aiming to help systems handle rare and complex situations more safely while also explaining their choices. As these improvements continue, AI is expected to become more reliable over time but it will still need human guidance and oversight for a long time to come.</p>
+
+  <h2>Conclusion</h2>
+  <p>AI still has clear limits, especially when it comes to understanding completely new situations, reasoning about the world the way people do and explaining its own decisions clearly. Knowing these limits, supported by current research and industry reporting, helps people use AI more safely and with realistic expectations about what it can and cannot yet do.</p>
+
+  <hr class="divider">
+
+  <h2>References</h2>
+  <div class="references-box">
+    <p>Brooks, R. (2017) <em>Edge cases for self driving cars</em>. Available at: <a href="https://rodneybrooks.com/edge-cases-for-self-driving-cars/" target="_blank" rel="noopener">https://rodneybrooks.com/edge-cases-for-self-driving-cars/</a> (Accessed: 26 September 2026).</p>
+    <p>Guidotti, R., Monreale, A. and Pedreschi, D. (2019) <em>The AI black box explanation problem</em>. Available at: <a href="https://www.kdnuggets.com/2019/03/ai-black-box-explanation-problem.html" target="_blank" rel="noopener">https://www.kdnuggets.com/2019/03/ai-black-box-explanation-problem.html</a> (Accessed: 26 September 2026).</p>
+    <p>Marwala, T. (2018) <em>The limit of artificial intelligence: Can machines be rational?</em> Available at: <a href="https://arxiv.org/pdf/1812.06510" target="_blank" rel="noopener">https://arxiv.org/pdf/1812.06510</a> (Accessed: 26 September 2026).</p>
+    <p>Unite.AI (2026) <em>Reasoning on the road: can NVIDIA's Alpamayo solve the self-driving 'edge case' problem?</em> Available at: <a href="https://www.unite.ai/reasoning-on-the-road-can-nvidias-alpamayo-solve-the-self-driving-edge-case-problem/" target="_blank" rel="noopener">https://www.unite.ai/reasoning-on-the-road-can-nvidias-alpamayo-solve-the-self-driving-edge-case-problem/</a> (Accessed: 26 September 2026).</p>
+  </div>
+
+  <a class="back-link" href="../index.html" style="margin-top:3rem; display:inline-block;">&larr; Back to Blog</a>
+
 </main>
 
 </body>
